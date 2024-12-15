@@ -16,20 +16,74 @@ body{
     width: 100%;
     display: flex;
     background-color: red;
+    border-radius: 20px;
 }
 aside{
     width: 200px;
     background-color: beige;
+    padding: 6px;
 }
 .aside_top{
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: space-evenly;
+    gap: 10px;
+    border-bottom: 1px solid;
+    padding: 20px 0px;
 }
 .aside_top h1{
     display: flex;
     align-items: center;
     gap: 6px;
     font-size: 20px;
-    /* font-weight: 600; */
 }
+.aside_middle{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-bottom: 1px solid;
+    transition: all 0.3s ease;
+}
+.aside_middle li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.aside_middle li:hover{
+    background-color: #f6dede;
+    transform: scale(1.1);
+    a{
+        color: black;
+    }
+}
+.aside_middle>ul>li>a{
+    color:#787486;
+}
+.aside_setting{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px;
+}
+.aside_setting>.setting_insert{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.setting_insert h1{
+    font-size: 15px;
+    color: #787486;
+}
+.setting{
+    display: flex;
+    align-items: center;
+    gap: 12px;  
+}
+
+
+
